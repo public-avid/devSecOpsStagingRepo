@@ -4,7 +4,7 @@ provider "aws" {
   region     = "${var.region}"
 }
 
-resource "aws_instance" "examsple" {
+resource "aws_instance" "examsdsple" {
   ami           = "${lookup(var.amis, var.region)}"
   instance_type = "t2.micro"
 
