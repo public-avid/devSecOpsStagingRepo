@@ -6,7 +6,7 @@ provider "aws" {
 
 resource "aws_instance" "exadle" {
   ami           = "${lookup(var.amis, var.region)}"
-  instance_type = "t2.micro"
+  instance_type = "${var.instance_type}"
 
   provisioner "local-exec" {
     command = "echo ${aws_instance.example.public_ip} > ip_address.txt"

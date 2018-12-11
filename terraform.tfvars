@@ -39,3 +39,4 @@ allow_users_to_change_password = true
 hard_expiry = true
 max_password_age = 0
 password_reuse_prevention = 5
+instance_type = "t2.micro"
