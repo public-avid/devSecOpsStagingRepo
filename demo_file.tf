@@ -34,7 +34,7 @@ resource "aws_iam_account_password_policy" "strict_2" {
 #Ensure SNS topics do not allow global send or subscribe
 
 resource "aws_sns_topic_policy" "sns_policy" {
-  arn = "someTopic"
+  arn = "${var.arn_name}"
 
   policy = <<EOF
 {
