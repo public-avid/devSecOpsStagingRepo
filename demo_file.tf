@@ -38,7 +38,7 @@ resource "aws_sns_topic_policy" "sns_policy" {
 
   policy = <<EOF
 {
-  "Version": "2008-10-17",
+  "Version": "2008-10-18",
   "Id": "__default_policy_ID",
   "Statement": [
     {
