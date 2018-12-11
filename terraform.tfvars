@@ -18,11 +18,6 @@ terragrunt = {
   terraform {
     source = "git::git@github.com:JuulLabs/infrastructure-modules.git//security/iam-user-password-policy?ref=v0.3.0"
   }
-
-  # Include all settings from the root terraform.tfvars file
-  include = {
-    path = "${find_in_parent_folders()}"
-  }
 }
 
 # ---------------------------------------------------------------------------------------------------------------------
