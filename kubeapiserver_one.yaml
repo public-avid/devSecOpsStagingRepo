@@ -30,7 +30,7 @@ spec:
     volumeMounts:
     - mountPath: /srv/kubernetes
       name: srvkube
-      readOnly: true
+      readOnly: true 
     - mountPath: /var/log/kube-apiserver.log
       name: logfile
     - mountPath: /etc/ssl
